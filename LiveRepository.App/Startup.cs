@@ -31,6 +31,7 @@ namespace LiveRepository.App
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            
 
             var connectionString = Configuration.GetConnectionString("LiveRepoCn");
 
