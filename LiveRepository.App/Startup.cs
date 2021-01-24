@@ -32,7 +32,6 @@ namespace LiveRepository.App
         {
             services.AddControllers();
             
-
             var connectionString = Configuration.GetConnectionString("LiveRepoCn");
 
             services.AddDbContext<DeliveryAppContext>(options => options.UseSqlServer(connectionString));
